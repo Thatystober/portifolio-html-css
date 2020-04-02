@@ -1,0 +1,621 @@
+/* Estrutura Página */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+/* Banners */
+.banner{
+    height: 599px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center center;
+}
+.sec-banner{
+    background-image: url(../img/banner2.png);
+    height: 290px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.text {
+    position: absolute;
+    top: 254px;
+    left: 166px;
+    color: #fff;
+    text-align: center;
+}
+#title-banner {
+    font-weight: bold;
+    font-size: 66px;
+}
+#text-banner {
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 99px;
+}
+.social-network {
+    width: 14%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 99px;
+    top: 43px;
+}
+#text-sec {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 129px;
+    font-size: 22px;
+}
+
+.text-secbanner {
+    margin: 0 auto;
+    width: 40%;
+}
+#icon-twitter,#icon-instagram,#icon-bolinhas {
+    padding-right: 5px;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    height: 587px;
+    flex-wrap: wrap-reverse;
+}
+.circle1{
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: solid 1px #fff;
+    margin-right: 5px;
+}
+.circle2{
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    border: solid 1px #fff;
+    margin-right: 5px;
+}
+.tec-banner{
+    min-width: 80%;
+    min-height: 80%;
+    margin: 10px 0 10px 0;
+}
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tec-banner:hover,.photo-4:hover,.photo-3:hover,.photo-2:hover,.photo-1:hover {
+    box-shadow: -1px 2px 7px #4a4a4a;
+    transition: 1s;
+}
+.photo-1{
+    margin: 0px 16px 10px 0;
+}
+.photo-2 {
+    margin-bottom:10px;
+}
+.photo-3 {
+    margin: 10px 16px 0 0;
+}
+.photo-4 {
+    margin-top: 10px;
+}
+.portifolio {
+    text-align: center;
+}
+.icon-photo {
+    padding-top: 54px;
+}
+#my-portfolio {
+    padding: 30px 0 45px;
+    text-transform: uppercase;
+    color: #3c3930;
+}
+.about {
+    text-align: center;
+}
+img.camera {
+    padding: 50px 0 30px 0;
+}
+#title-about {
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: #3c3930;
+}
+#text-about {
+    padding-bottom: 60px;
+    text-align: inherit;
+    margin: 0px 83px 0px 83px;
+    color: #3c3930;
+}
+#title-about,#my-portfolio,#title-find {
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+.previous-next {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0px 41px 0 39px;
+}
+.find-me {
+    text-align: center;
+    color: #3c3930;
+}
+.redes-sociais {
+    padding: 64px 0 25px;
+}
+#title-find {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+.icon-0 {
+    padding-bottom: 77px;
+}
+.icon-0, .icon-1 {
+    padding-bottom: 77px;
+    transition: 3s;
+}
+.icon-0:hover, .icon-1:hover {
+    transform: rotate3d(0, 1, 0, 360deg);
+    transition: 3s;
+}
+.icon-1 {
+    margin: 0px 35px 0;
+}
+button.page:focus {
+    outline: transparent;
+}
+.page {
+    border: 0;
+    background: #fff;
+    display: flex;
+    margin-top: 20px;
+}
+.title-seta {
+    line-height: 3;
+    text-transform: uppercase;
+    color: #61605f;
+    letter-spacing: 2px;
+}
+.previous-page, .next-page{
+    cursor: pointer;
+}
+.previous-page {
+    margin-right: 25px;
+}
+.next-page{
+    margin-left: 25px;
+}
+footer{
+    background-image: url("../img/banner-footer.png");
+    height: 640px;
+}
+#title-form,.campo-name,.campo-email,.campo-mensagem, #submit, #rodape{
+    text-align: center;
+}
+#title-form {
+    padding: 57px 0 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+.campo-name {
+    width: 50%;
+    float: left;
+}
+.campo-email {
+    width: 50%;
+    float: right;
+}
+#name, #email {
+    height: 50px;
+    width: 476px;
+    opacity: 0.5;
+    background: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding-left: 19px;
+    letter-spacing: 3px;
+}
+textarea{
+    resize: none;
+    height: 189px;
+    width: 1013px;
+    opacity: 0.5;
+    background: #fff;
+    border: 0;
+    padding-top: 16px;
+    margin-top: 46px;
+    text-transform: uppercase;
+    padding-left: 19px;
+    letter-spacing: 3px;
+}
+::-webkit-input-placeholder {
+    color:#3c3930;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+textarea::-webkit-input-placeholder{
+    font-size: 13.3333px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ #rodape {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    width: 681px;
+    margin: 0 auto;
+}
+#button-submit {
+    transition: 1s;
+    background: transparent;
+    border: 2px solid #ffff;
+    width: 400px;
+    height: 57px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+#button-submit:hover {
+    transform: scale(0.9);
+    transition: 1s;
+}
+#submit {
+    margin: 38px 0 58px;
+}
+#share {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 9px;
+}
+.facebook {
+    position: absolute;
+    top: 34px;
+    left: 9px;
+}
+.twitter {
+    position: absolute;
+    top: 76px;
+    left: 9px;
+}
+.pinterest {
+    position: absolute;
+    top: 113px;
+    left: 9px;
+}
+#text-icon {
+    position: absolute;
+    left: 58px;
+    top: 1711px;
+}
+a {
+    color: transparent;
+}
+@media (max-width: 1100px) {
+    .wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+@media (max-width: 980px) {
+    .text-secbanner {
+        width: 45%;
+    }
+    #text-icon {
+        left: 13px;
+        top: 1917px;
+    }
+    #name, #email {
+        width: 451px;
+    }
+    textarea {
+        width: 939px;
+    }
+}
+
+@media (max-width: 720px) {
+    .logo {
+        left: 85px;
+    }
+    .social-network {
+        right: 49px;
+    }
+    .text {
+        left: 20px;
+        top: 200px;
+    }
+    .text-secbanner {
+        width: 58%;
+    }
+    #text-icon {
+        top: 1676px;
+    }
+    .photo-1,
+    .photo-2, 
+    .photo-3,
+    .photo-4 {
+        width: 20%;
+    }
+    #name, #email {
+        width: 326px;
+    }
+    textarea {
+        width: 684px;
+    }
+    #title-banner {
+        font-size: 60px;
+    }
+}
+@media (max-width: 640px) {
+    .photo-1, .photo-2, .photo-3, .photo-4 {
+        width: 45%;
+        margin: 0px 8px 5px 0;
+    }
+    .tec-banner{
+        margin: 10px 12px 10px 12px;
+    }
+    #text-icon {
+        top: 2064px;
+    }
+    #name, #email {
+        width: 283px;
+    }
+    textarea {
+        width: 603px;
+    }
+    .text-secbanner {
+        width: 66%;
+    }
+    #submit {
+        margin: 38px 0 40px;
+    }
+}
+@media (max-width:425px){
+    .social-network{
+        display: none;
+    }
+    .logo {
+        left: 103px;
+        top: 32px;
+    }
+    .text {
+        left: 10px;
+        top: 122px;
+    }
+    #title-banner {
+        font-size: 34px;
+    }
+    #text-banner {
+        font-size: 14px;
+    }
+    .circle {
+        height: 296px; 
+    }
+    .banner {
+        height: 314px;
+    }
+    #title-about, #my-portfolio, #title-find {
+        font-size: 19px;
+    }
+    img.camera {
+        padding: 35px 0 25px 0;
+    }
+    .circle1,
+    .circle2 {
+        width: 10px;
+        height: 10px;
+    }
+    #text-about {
+        margin: 0px 25px 0px 25px;
+    }
+    #text-sec {
+        font-size: 14px;
+        padding-top: 90px;
+    }
+    .sec-banner {
+        height: 213px;
+    }
+    .icon-photo {
+        padding-top: 35px;
+    }
+    .photo-1, .photo-2, .photo-3, .photo-4 {
+        width: 100%;
+    }
+    .tec-banner {
+        margin: 0px 6px 10px 6px;
+    }
+    #text-icon {
+        top: 2602px;
+    }
+    .previous-next {
+        padding: 0px 5px 0 5px;
+    }
+    .previous-page {
+        margin-right: 5px;
+    }
+    .next-page {
+        margin-left: 5px;
+    }
+    .redes-sociais {
+        padding: 35px 25px;
+    }
+    .icon-0, .icon-1 {
+        padding-bottom: 22px;
+        width: 50%;
+    }
+    .icon-1 {
+        margin: 0;
+    }
+    #title-form {
+        padding: 41px 0 38px;
+        font-size: 16px;
+    }
+    #name, #email {
+        width: 176px;
+    }
+    textarea {
+        width: 382px;
+        height: 153px;
+        margin-top: 27px;
+    }
+    #button-submit {
+        width: 272px;
+        height: 52px;
+    }
+    #rodape {
+        font-size: 10px;
+        width: 359px;
+    }
+    footer {
+        height: 534px;
+    }
+}
+@media (max-width: 320px){
+    .logo{
+        left: 70px!important;
+    }
+    #title-banner {
+        font-size: 25px!important;
+    }
+    #text-banner {
+        font-size: 14px!important;
+    }
+    .text {
+        left: 0px!important;
+    }
+}
+@media (max-width:380px){
+    .wrapper{
+        max-width: 320px;
+    }
+    .social-network{
+        display: none;
+    }
+    .logo {
+        left: 60px;
+        top: 30px;
+    }
+    #title-banner {
+        font-size: 23px;
+    }
+    .text {
+        position: absolute;
+        top: 117px;
+    }
+    .circle {
+        height: 237px;
+    }
+    #text-banner {
+        font-size: 11px;
+    }
+    .banner {
+        height: 244px;
+    }
+    .circle1,
+    .circle2 {
+        width: 10px;
+        height: 10px;
+    }
+    #title-about, #my-portfolio, #title-find {
+        font-size: 18px;
+    }
+    #text-about {
+        margin: 0;
+    }
+    img.camera {
+        padding: 35px 0 25px 0;
+    }
+    #text-sec {
+        font-size: 11px;
+        padding-top: 89px;
+    }
+    .sec-banner {
+        height: 183px;
+    }
+    .icon-photo {
+        padding-top: 35px;
+    }
+    .photo-1, .photo-2, .photo-3, .photo-4 {
+        width: 100%;
+    }
+    .tec-banner {
+        margin: 10px 4px 10px 4px;
+    }
+    #text-icon {
+        top: 2230px;
+    }
+    .title-seta {
+        font-size: 11px;
+    }
+    .previous-next {
+        padding: 0px 0px 0 0px;
+    }
+    .next-page {
+        margin-left: 8px;
+        width: 17px;
+    }
+    .previous-page {
+        margin-right: 8px;
+        width: 17px;
+    }
+    .redes-sociais {
+        padding: 35px 0 25px;
+    }
+    .icon-1 {
+        margin: 0 0 0 6px;
+    }
+    .icon-0, .icon-1 {
+        padding-bottom: 18px;
+    }
+    #title-form {
+        padding: 30px 0 45px;
+        font-size: 16px;
+    }
+    #name, #email {
+        width: 129px;
+    }
+    textarea {
+        width: 289px;
+        height: 160px;
+        margin-top: 32px;
+    }
+    #button-submit {
+        width: 250px;
+        height: 53px;
+    }
+    #rodape {
+        font-size: 10px;
+        width: 283px;
+    }
+    footer {
+        height: 538px;
+    }
+}
